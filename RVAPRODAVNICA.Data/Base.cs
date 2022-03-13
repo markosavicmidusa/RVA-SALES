@@ -8,5 +8,6 @@ namespace RVAPRODAVNICA.Data
 {
     public class Base
     {
+        public int Id { get; set; }
     }
 }
