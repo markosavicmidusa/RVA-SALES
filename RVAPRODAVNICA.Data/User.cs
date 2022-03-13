@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RVAPRODAVNICA.Data
 {
-    internal class User : Base
+    public class User : Base
     {
 
         //identifikacija i autentifikacija -: imaju uradjene funkcije
