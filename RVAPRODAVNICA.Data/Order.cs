@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RVAPRODAVNICA.Data
 {
-    internal class Order
+    internal class Order : Base
     {
     }
 }

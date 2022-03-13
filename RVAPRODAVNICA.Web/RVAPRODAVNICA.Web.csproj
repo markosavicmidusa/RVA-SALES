@@ -13,6 +13,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2" />
+    <PackageReference Include="StackExchange.Redis" Version="2.5.43" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RVAPRODAVNICA.Data\RVAPRODAVNICA.Data.csproj" />
   </ItemGroup>
 
 </Project>

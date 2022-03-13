@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RVAPRODAVNICA.Data
 {
-    internal class UserRole
+    internal class UserRole : Base
     {
     }
 }

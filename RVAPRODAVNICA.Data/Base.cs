@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RVAPRODAVNICA.Data
 {
-    internal class Product : Base
+    public class Base
     {
     }
 }
