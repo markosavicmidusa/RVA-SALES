@@ -11,9 +11,20 @@ namespace RVAPRODAVNICA.Repositories
     public interface IProductRepository {
 
         Product GetOne(int id);
+
+        Product GetAll();
     }
 
-    public class ProductRepository
+    public class ProductRepository : IProductRepository
     {
+        public Product GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product GetOne(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
