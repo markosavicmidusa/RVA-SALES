@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RRVAPRODAVNICA.Models", "RR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RVAPRODAVNICA.Repositories", "RVAPRODAVNICA.Repositories\RVAPRODAVNICA.Repositories.csproj", "{BCF0B819-CD53-491F-A4AA-A883D50508EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RVAPRODAVNICA.Services", "RVAPRODAVNICA.Services\RVAPRODAVNICA.Services.csproj", "{771F870C-C6D5-465A-ABB1-6FB6BF8BC94D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BCF0B819-CD53-491F-A4AA-A883D50508EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCF0B819-CD53-491F-A4AA-A883D50508EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCF0B819-CD53-491F-A4AA-A883D50508EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771F870C-C6D5-465A-ABB1-6FB6BF8BC94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771F870C-C6D5-465A-ABB1-6FB6BF8BC94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771F870C-C6D5-465A-ABB1-6FB6BF8BC94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771F870C-C6D5-465A-ABB1-6FB6BF8BC94D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
