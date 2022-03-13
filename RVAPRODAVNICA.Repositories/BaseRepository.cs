@@ -21,7 +21,7 @@ namespace RVAPRODAVNICA.Repositories
         private IConfiguration configuration;
         public string connectionString;
 
-        private BaseRepository(IConfiguration configuration) { 
+        public BaseRepository(IConfiguration configuration) { 
         
             this.configuration = configuration;
             connectionString = configuration.GetConnectionString("DefaultConnection");
