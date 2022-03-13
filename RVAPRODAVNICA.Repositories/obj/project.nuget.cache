@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dk4n/9IcFcXfb2V767JIoKIOb6wT+pfGP3NfWDtlcOUjUFy+KKHrSjbsoy6OMBIntBquiw+21JOt1OkEG328sQ==",
+  "dgSpecHash": "ejUNkWRYjanl807APbKYRdOlJZD0f0z1bBB5rPbvXBlplrB3Bdqcy75rzcWB82/Q5E4DGJhJop2Mw3B1iZPNuA==",
   "success": true,
   "projectFilePath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Repositories\\RVAPRODAVNICA.Repositories.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,8 @@
     "C:\\Users\\user\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mysql.data\\8.0.28\\mysql.data.8.0.28.nupkg.sha512",
@@ -19,7 +21,7 @@
     "C:\\Users\\user\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
