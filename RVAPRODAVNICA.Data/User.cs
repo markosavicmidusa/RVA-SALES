@@ -8,5 +8,7 @@ namespace RVAPRODAVNICA.Data
 {
     internal class User
     {
+
+        //identifikacija i autentifikacija -: imaju uradjene funkcije
     }
 }
