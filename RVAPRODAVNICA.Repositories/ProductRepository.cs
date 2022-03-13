@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dapper;
+using MySql.Data.MySqlClient;
 using RVAPRODAVNICA.Data;
 
 namespace RVAPRODAVNICA.Repositories
@@ -12,14 +14,17 @@ namespace RVAPRODAVNICA.Repositories
 
         Product GetOne(int id);
 
-        Product GetAll();
+        List <Product> GetAll();
     }
 
     public class ProductRepository : IProductRepository
     {
-        public Product GetAll()
+        public List<Product> GetAll()
         {
-            throw new NotImplementedException();
+            var connection = new MySqlConnection("Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=;");         
+            List<Product> products = connection.Query<Product>("SELECT * FROM products").ToList();
+            return products;
+       
         }
 
         public Product GetOne(int id)
