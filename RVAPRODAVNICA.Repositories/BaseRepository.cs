@@ -32,9 +32,10 @@ namespace RVAPRODAVNICA.Repositories
         public BaseRepository(IConfiguration configuration) {
 
             SimpleCRUD.SetDialect(SimpleCRUD.Dialect.MySQL);
+
             this.configuration = configuration;
             connectionString = configuration.GetConnectionString("DefaultConnection");
-            connection =new MySqlConnection(connectionString);
+            connection = new MySqlConnection(connectionString);
 
         }
         /// <summary>
@@ -43,10 +44,8 @@ namespace RVAPRODAVNICA.Repositories
         /// <returns></returns>
         public List<TEntity> readAll()
         {
-
             List<TEntity> results = connection.GetList<TEntity>().ToList();
             return results;
-
         }
         /// <summary>
         /// Get one record 
@@ -56,7 +55,7 @@ namespace RVAPRODAVNICA.Repositories
         /// <exception cref="NotImplementedException"></exception>
         public TEntity readOne(int id)
         {
-
+            
             TEntity result = connection.Get<TEntity>(id);
             return result;
 
@@ -88,7 +87,7 @@ namespace RVAPRODAVNICA.Repositories
         /// <exception cref="NotImplementedException"></exception>
         public void Delete(TEntity obj)
         {
-           connection.Delete(obj);
+            connection.Delete(obj);
         }
     }
 }

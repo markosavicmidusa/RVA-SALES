@@ -27,6 +27,11 @@ namespace RVAPRODAVNICA.Web.Controllers
             List<Product>? resultProduct = productRepository.readAll();
             List<Order>? orderProduct = orderRepository.readAll();
 
+            //Product product = new Product();
+            //product.Name = "Laptop 3";
+
+            //var createResult = productRepository.Create(product);
+            
             return View();
         }
 
