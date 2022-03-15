@@ -1,0 +1,5 @@
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.csproj.AssemblyReference.cache
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.AssemblyInfoInputs.cache
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.AssemblyInfo.cs
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.csproj.CoreCompileInputs.cache
