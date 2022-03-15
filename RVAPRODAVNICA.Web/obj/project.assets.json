@@ -2835,7 +2835,6 @@
       "Microsoft.AspNetCore.Identity.UI >= 6.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.2",
-      "RVAPRODAVNICA.Repositories >= 1.0.0",
       "RVAPRODAVNICA.Services >= 1.0.0",
       "StackExchange.Redis >= 2.5.43"
     ]
@@ -2867,9 +2866,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Repositories\\RVAPRODAVNICA.Repositories.csproj": {
-              "projectPath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Repositories\\RVAPRODAVNICA.Repositories.csproj"
-            },
             "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Services\\RVAPRODAVNICA.Services.csproj": {
               "projectPath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Services\\RVAPRODAVNICA.Services.csproj"
             }

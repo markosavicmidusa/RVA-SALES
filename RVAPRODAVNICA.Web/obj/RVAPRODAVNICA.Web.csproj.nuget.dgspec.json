@@ -219,9 +219,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Repositories\\RVAPRODAVNICA.Repositories.csproj": {
-                "projectPath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Repositories\\RVAPRODAVNICA.Repositories.csproj"
-              },
               "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Services\\RVAPRODAVNICA.Services.csproj": {
                 "projectPath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Services\\RVAPRODAVNICA.Services.csproj"
               }

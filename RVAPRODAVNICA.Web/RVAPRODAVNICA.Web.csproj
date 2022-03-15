@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RVAPRODAVNICA.Repositories\RVAPRODAVNICA.Repositories.csproj" />
     <ProjectReference Include="..\RVAPRODAVNICA.Services\RVAPRODAVNICA.Services.csproj" />
   </ItemGroup>
 
