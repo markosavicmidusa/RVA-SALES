@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.2",
           "RVAPRODAVNICA.Repositories": "1.0.0",
+          "RVAPRODAVNICA.Services": "1.0.0",
           "StackExchange.Redis": "2.5.43"
         },
         "runtime": {
@@ -696,6 +697,15 @@
         "runtime": {
           "RVAPRODAVNICA.Repositories.dll": {}
         }
+      },
+      "RVAPRODAVNICA.Services/1.0.0": {
+        "dependencies": {
+          "RVAPRODAVNICA.Data": "1.0.0",
+          "RVAPRODAVNICA.Repositories": "1.0.0"
+        },
+        "runtime": {
+          "RVAPRODAVNICA.Services.dll": {}
+        }
       }
     }
   },
@@ -1173,6 +1183,11 @@
       "sha512": ""
     },
     "RVAPRODAVNICA.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RVAPRODAVNICA.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

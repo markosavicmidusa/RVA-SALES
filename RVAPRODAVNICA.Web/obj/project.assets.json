@@ -963,6 +963,20 @@
         "runtime": {
           "bin/placeholder/RVAPRODAVNICA.Repositories.dll": {}
         }
+      },
+      "RVAPRODAVNICA.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RVAPRODAVNICA.Data": "1.0.0",
+          "RVAPRODAVNICA.Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RVAPRODAVNICA.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RVAPRODAVNICA.Services.dll": {}
+        }
       }
     }
   },
@@ -2807,6 +2821,11 @@
       "type": "project",
       "path": "../RVAPRODAVNICA.Repositories/RVAPRODAVNICA.Repositories.csproj",
       "msbuildProject": "../RVAPRODAVNICA.Repositories/RVAPRODAVNICA.Repositories.csproj"
+    },
+    "RVAPRODAVNICA.Services/1.0.0": {
+      "type": "project",
+      "path": "../RVAPRODAVNICA.Services/RVAPRODAVNICA.Services.csproj",
+      "msbuildProject": "../RVAPRODAVNICA.Services/RVAPRODAVNICA.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2817,6 +2836,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.2",
       "RVAPRODAVNICA.Repositories >= 1.0.0",
+      "RVAPRODAVNICA.Services >= 1.0.0",
       "StackExchange.Redis >= 2.5.43"
     ]
   },
@@ -2849,6 +2869,9 @@
           "projectReferences": {
             "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Repositories\\RVAPRODAVNICA.Repositories.csproj": {
               "projectPath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Repositories\\RVAPRODAVNICA.Repositories.csproj"
+            },
+            "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Services\\RVAPRODAVNICA.Services.csproj": {
+              "projectPath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Services\\RVAPRODAVNICA.Services.csproj"
             }
           }
         }

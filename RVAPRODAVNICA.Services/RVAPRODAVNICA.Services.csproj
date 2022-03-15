@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RVAPRODAVNICA.Data\RVAPRODAVNICA.Data.csproj" />
+    <ProjectReference Include="..\RVAPRODAVNICA.Repositories\RVAPRODAVNICA.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>
