@@ -12,6 +12,6 @@ namespace RVAPRODAVNICA.Data
     {
 
         [Column("name")]
-        public string? name { get; set; }
+        public string? Name { get; set; }
     }
 }
