@@ -3,3 +3,13 @@ D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAV
 D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.AssemblyInfoInputs.cache
 D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.AssemblyInfo.cs
 D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.csproj.CoreCompileInputs.cache
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\bin\Debug\net6.0\RVAPRODAVNICA.Repositories.deps.json
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\bin\Debug\net6.0\RVAPRODAVNICA.Repositories.dll
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\bin\Debug\net6.0\RVAPRODAVNICA.Repositories.pdb
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\bin\Debug\net6.0\RVAPRODAVNICA.Data.dll
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\bin\Debug\net6.0\RVAPRODAVNICA.Data.pdb
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.csproj.CopyComplete
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.dll
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\refint\RVAPRODAVNICA.Repositories.dll
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\RVAPRODAVNICA.Repositories.pdb
+D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Repositories\obj\Debug\net6.0\ref\RVAPRODAVNICA.Repositories.dll
