@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
+using RRVAPRODAVNICA.Models;
 using RVAPRODAVNICA.Data;
 using RVAPRODAVNICA.Repositories;
+
 
 namespace RVAPRODAVNICA.Services
 {
@@ -12,8 +15,8 @@ namespace RVAPRODAVNICA.Services
     public interface IProductService
     {
 
-        List<Product> ReadAll();
-        Product Get(int id);
+        List<ProductModel>ReadAll();
+        ProductModel Get(int id);
         int Create(Product obj);
         void Update(Product obj);
         void Delete(Product obj);
@@ -23,10 +26,12 @@ namespace RVAPRODAVNICA.Services
     {
 
         private readonly IProductRepository productRepository;
+        private readonly IMapper mapperService;
 
-        public ProductService(IProductRepository productRepository) { 
+        public ProductService(IProductRepository productRepository, IMapper mapperService) { 
         
             this.productRepository = productRepository;
+            this.mapperService = mapperService;
         
         }
         /// <summary>
@@ -52,18 +57,22 @@ namespace RVAPRODAVNICA.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Product Get(int id)
+        public ProductModel Get(int id)
         {
-            return productRepository.readOne(id);
+            Product result = productRepository.readOne(id);
+            ProductModel resultModel = mapperService.Map<ProductModel>(result);
+            return resultModel;
             
         }
         /// <summary>
         /// Read all
         /// </summary>
         /// <returns></returns>
-        public List<Product> ReadAll()
+        public List<ProductModel> ReadAll()
         {
-          return productRepository.readAll();
+            List<Product>? result = productRepository.readAll();
+            List<ProductModel> resultModel = mapperService.Map<List<ProductModel>>(result);
+            return resultModel;
             
         }
         /// <summary>

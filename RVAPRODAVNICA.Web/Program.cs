@@ -21,6 +21,7 @@ builder.Services.AddSingleton<IOrderRepository, OrderRepository>();
 
 builder.Services.AddSingleton<IProductService, ProductService>();
 
+builder.Services.AddAutoMapper(typeof(MapperService));
 
 var app = builder.Build();
 

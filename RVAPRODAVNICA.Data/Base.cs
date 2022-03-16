@@ -15,12 +15,11 @@ namespace RVAPRODAVNICA.Data
         [Column("date_created_at")]
         public DateTime? DataCreatedAt { get; set; }
 
-        [Column("date_update_dat")]
+        [Column("date_update_at")]
         public DateTime? DataUreatedAt { get; set; }
 
         [Column("active")]
         public bool? Active { get; set; }
-
 
     }
 }

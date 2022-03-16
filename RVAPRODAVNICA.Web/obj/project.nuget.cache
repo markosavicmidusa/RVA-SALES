@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZhQEP6G8JDWDfKvUlK/bhwdfyFCaFY2ouGsG0/v+1LNPPxwlAE3WfRwuVgHnOIh7oEv+Tn4i9Xhnn1Lh5Hs3dQ==",
+  "dgSpecHash": "RJu7bAhofaseYMr36eoIjziUhdmgtapoRGJVL7S59tItwHsAOST5v/jqYpRItuMbEjhvpVKj7Ih4D0ukSoZG2A==",
   "success": true,
   "projectFilePath": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Web\\RVAPRODAVNICA.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\dapper.simplecrud\\2.3.0\\dapper.simplecrud.2.3.0.nupkg.sha512",
@@ -17,7 +19,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.2\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.2\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\microsoft.aspnetcore.identity.ui.6.0.2.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
