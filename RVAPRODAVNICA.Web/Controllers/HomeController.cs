@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
+using RRVAPRODAVNICA.Models;
 using RVAPRODAVNICA.Data;
 using RVAPRODAVNICA.Services;
 //using RVAPRODAVNICA.Data;
@@ -36,8 +37,8 @@ namespace RVAPRODAVNICA.Web.Controllers
             //product.Name = "Laptop 3";
             //var createResult = productRepository.Create(product);
 
-            List<Product>? resultProduct = productService.ReadAll();
-            Product product2 = productService.Get(1);
+            List<ProductModel>? resultProduct = productService.ReadAll();
+            ProductModel product2 = productService.Get(1);
 
             Product product3 = new Product();
             product3.Name = "Laptop 44";
