@@ -12,12 +12,12 @@ namespace RVAPRODAVNICA.Data
     {
 
         [Column("name")]
-        public string? Name { get; set; }
+        public string Name { get; set; }
 
         [Column("description")]
-        public string? Description { get; set; }
+        public string Description { get; set; }
 
         [Column("price")]
-        public double? Price { get; set; }
+        public double Price { get; set; }
     }
 }
