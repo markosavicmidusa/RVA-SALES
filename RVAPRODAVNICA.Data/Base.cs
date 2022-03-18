@@ -10,13 +10,13 @@ namespace RVAPRODAVNICA.Data
     public class Base
      {
         [Column("id")]
-        public string? Id { get; set; }
+        public string Id { get; set; }
 
         [Column("date_created_at")]
-        public DateTime? DataCreatedAt { get; set; }
+        public DateTime DataCreatedAt { get; set; }
 
         [Column("date_update_at")]
-        public DateTime? DataUreatedAt { get; set; }
+        public DateTime DataUreatedAt { get; set; }
 
         [Column("active")]
         public bool? Active { get; set; }

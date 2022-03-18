@@ -10,12 +10,12 @@ namespace RRVAPRODAVNICA.Models
     {
 
   
-        public string? Id { get; set; }  
-        public DateTime? DataCreatedAt { get; set; }
-        public DateTime? DataUreatedAt { get; set; }
+        public string Id { get; set; }  
+        public DateTime DataCreatedAt { get; set; }
+        public DateTime DataUreatedAt { get; set; }
         public bool? Active { get; set; }  
-        public string? Name { get; set; }
-        public string? Description { get; set; }
-        public double? Price { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public double Price { get; set; }
     }
 }
