@@ -41,9 +41,14 @@ namespace RVAPRODAVNICA.Web.Controllers
             ProductModel product2 = productService.Get(1);
 
             Product product3 = new Product();
-            product3.Name = "Laptop 44";
-            var createResult = productService.Create(product3);
+            /*product3.Name = "Laptop 44";
+            product3.Active = true;
+            product3.Description = "Great Laptop";
+            product3.Price = 1200.00;
+            product3.
 
+            var createResult = productService.Create(product3);
+            */
 
 
 
