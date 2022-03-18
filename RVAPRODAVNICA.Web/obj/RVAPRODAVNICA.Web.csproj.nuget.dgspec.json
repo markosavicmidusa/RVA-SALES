@@ -325,9 +325,17 @@
               "target": "Package",
               "version": "[6.0.2, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.5.43, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.1.3, )"
             }
           },
           "imports": [
