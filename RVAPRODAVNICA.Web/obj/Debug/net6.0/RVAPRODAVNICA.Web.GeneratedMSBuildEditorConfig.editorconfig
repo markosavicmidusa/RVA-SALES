@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/Views/Product/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUHJvZHVjdFxQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -29,6 +41,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNjcmlwdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/Sidenavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGVuYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/Styles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFN0eWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Views/Shared/_LoginPartial.cshtml]

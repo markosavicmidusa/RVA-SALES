@@ -12,34 +12,36 @@
     </title>
 
      <partial name="Styles" />
- 
+     @await RenderSectionAsync("Styles", required: false)
 
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
   
- 
+  <partial name="Sidenavbar" />
 
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
    
-    <partial name="Sidenavbar" />
-     <partial name="Navbar" />
+    
 
     <div class="container-fluid py-4">
+        <partial name="Navbar" />
        
-     @RenderBody() @*Ovde ce se ucitavati nase parcijalne stranice To smo iskoppirali iz naseg inicijalnog file-a*@  
+    @RenderBody() @*Ovde ce se ucitavati nase parcijalne stranice To smo iskoppirali iz naseg inicijalnog file-a*@  
 
-     <partial name="Footer"/>
-
+    <partial name="Footer"/>
 
     </div>
 
   </main>
   
-     <partial name="Scripts" />
+     
      <partial name="Settings" />
 
 
 </body>
+
+     <partial name="Scripts" />
+     @await RenderSectionAsync("Scripts", required: false)
 
 </html>

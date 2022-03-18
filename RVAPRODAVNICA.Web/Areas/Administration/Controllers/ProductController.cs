@@ -6,6 +6,7 @@ namespace RVAPRODAVNICA.Web.Areas.Administration.Controllers
 {
     [Area("Administration")]
     [Route("Administration/[controller]/[action]/{id?}")]
+   
     public class ProductController : Controller
     {
         #region Dependency injection
@@ -34,7 +35,6 @@ namespace RVAPRODAVNICA.Web.Areas.Administration.Controllers
         /// <returns></returns>
         public IActionResult Products()
         {
-
             return View(productService.ReadAll());
         } 
         #endregion
