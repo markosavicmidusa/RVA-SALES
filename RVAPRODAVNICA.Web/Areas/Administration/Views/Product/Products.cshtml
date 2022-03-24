@@ -33,12 +33,13 @@
                 </table>
               </div>
             </div>
+                <button class="btn btn-secondary mt-2" id="load-more">LOAD</button>
           </div>
         </div>
       </div>
 
       @section Scripts{
-
+        <script src="~/js/ajaxCalls.js"></script>
         <script>
 
             $(document).ready(function() {
@@ -47,24 +48,18 @@
                  /** Ajax ima ugradjen http request */
                  /**Iskoristio je neki kod koji je pripremio */
 
-                 var data = {"pageNumber": 1, "rowsPerPage": 10}
-                 
-                 $.ajax({
-                    method: "GET",
-                    url: "/Administration/Product/Rows",
-                    data: data,
-                    success: function (response){
-                        var len = $(response).find('.counter-rows').length;
-                        //alert(len)
-                        if(len != null && len > 0){
-                            $('#product-panel').append(response);
-                        }
-                    },
-                    error: function(){
-                        //alert(errorText)
-                    }
-                                  
-                 })
+                 var pageNumber = 1;
+                 var rowsPerPage = 3;
+                 var url = "/Administration/Product/Rows";
+                 var dataObject = $('#product-panel');
+
+               // TableSearch(dataObject, url, pageNumber, rowsPerPage);
+
+                 $("#load-more").click(function (){
+                     dataObject.empty();
+                     TableSearch(dataObject, url, pageNumber, rowsPerPage);
+                     pageNumber++;
+                 })  
 
             })
         </script>
