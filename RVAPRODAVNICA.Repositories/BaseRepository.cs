@@ -18,7 +18,7 @@ namespace RVAPRODAVNICA.Repositories
         int Create(TEntity obj);
         void Update(TEntity obj);
         void Delete(TEntity obj);
-        List<TEntity> TableSearch(int pageNumber, int rowsPerPage, string conditions, string orderBy);
+        List<TEntity> TableSearch(int pageNumber, int rowsPerPage);
 
     }
 
@@ -111,9 +111,9 @@ namespace RVAPRODAVNICA.Repositories
         /// <param name="conditions"></param>
         /// <param name="orderBy"></param>
         /// <returns></returns>
-        public List<TEntity> TableSearch(int pageNumber, int rowsPerPage, string conditions, string orderBy)
+        public List<TEntity> TableSearch(int pageNumber, int rowsPerPage)
         {
-            return connection.GetListPaged<TEntity>(pageNumber, rowsPerPage, conditions, orderBy).ToList();
+            return connection.GetListPaged<TEntity>(pageNumber, rowsPerPage, "", "").ToList();
         }
 
 

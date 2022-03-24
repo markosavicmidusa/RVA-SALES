@@ -21,7 +21,7 @@ namespace RVAPRODAVNICA.Services
         void Update(Product obj);
         void Delete(Product obj);
 
-        List<ProductModel> TableSearch(int pageNumber, int rowsPerPage, string conditions, string orderBy);
+        List<ProductModel> TableSearch(int pageNumber, int rowsPerPage);
 
 
     }
@@ -107,9 +107,11 @@ namespace RVAPRODAVNICA.Services
         /// <param name="orderBy"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public List<ProductModel> TableSearch(int pageNumber, int rowsPerPage, string conditions, string orderBy)
+        public List<ProductModel> TableSearch(int pageNumber, int rowsPerPage)
         {
-            List<Product>? resultFromDb = productRepository.TableSearch( pageNumber, rowsPerPage, conditions, orderBy);
+            //, string conditions, string orderBy - obrisali smo ovo
+
+            List<Product>? resultFromDb = productRepository.TableSearch( pageNumber, rowsPerPage);
             List<ProductModel> resultModel = mapperService.Map<List<ProductModel>>(resultFromDb);
             return resultModel;
         }

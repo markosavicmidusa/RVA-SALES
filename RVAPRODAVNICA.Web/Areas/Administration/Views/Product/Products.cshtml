@@ -17,7 +17,7 @@
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
+                <table class="table align-items-center mb-0" id="product-panel">
                   <thead>
                     <tr>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
@@ -40,8 +40,38 @@
       @section Scripts{
 
         <script>
-            
+            $(document ).ready(function() {
+                 /*console.log( "ready!" );*/
+                 //alert("hello");
+                 /** Ajax ima ugradjen http request */
+                 /**Iskoristio je neki kod koji je pripremio */
+
+                 var data = {"pageNumber": 0, "rowsPerPage": 10}
+                 
+                 $.ajax({
+                    method: "GET",
+                    url: url,
+                    data: data,
+                    success: function (response){
+                        var len = $(response).find('.counter-rows').length;
+
+                        if(len != null && len > 0){
+                            $('#product-panel').append(response);
+                        }
+                    },
+                    error: function(){
+                        //alert(errorText)
+                    }
+                 
+                 
+                 
+                 })
+
+
+
+            })
         </script>
+
       }
       
 
