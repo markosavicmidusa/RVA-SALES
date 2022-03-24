@@ -37,7 +37,7 @@ namespace RVAPRODAVNICA.Web.Controllers
             //product.Name = "Laptop 3";
             //var createResult = productRepository.Create(product);
 
-            List<ProductModel>? resultProduct = productService.ReadAll();
+           // List<ProductModel>? resultProduct = productService.ReadAll();
             /*ProductModel product2 = productService.Get(1);*/
 
             Product product3 = new Product();
