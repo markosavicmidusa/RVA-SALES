@@ -16,10 +16,13 @@ namespace RVAPRODAVNICA.Services
     {
 
         List<ProductModel>ReadAll();
-        ProductModel Get(int id);
+        ProductModel ReadOne(int id);
         int Create(Product obj);
         void Update(Product obj);
         void Delete(Product obj);
+
+        List<ProductModel> TableSearch(int pageNumber, int rowsPerPage, string conditions, string orderBy);
+
 
     }
     public class ProductService : IProductService
@@ -53,17 +56,22 @@ namespace RVAPRODAVNICA.Services
            productRepository.Delete(obj);
         }
         /// <summary>
-        /// Get by ID
+        ///  ReadOne
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public ProductModel Get(int id)
+        /// 
+
+        public ProductModel ReadOne(int id)
         {
-            Product result = productRepository.readOne(id);
-            ProductModel resultModel = mapperService.Map<ProductModel>(result);
-            return resultModel;
-            
+            //Product result = productRepository.readOne(id);
+            //ProductModel resultModel = mapperService.Map<ProductModel>(result);
+            //return resultModel;
+
+            return mapperService.Map<ProductModel>(productRepository.readOne(id));
+
         }
+     
         /// <summary>
         /// Read all
         /// </summary>
@@ -75,6 +83,11 @@ namespace RVAPRODAVNICA.Services
             return resultModel;
             
         }
+
+
+
+       
+
         /// <summary>
         /// UPDATE
         /// </summary>
@@ -83,5 +96,24 @@ namespace RVAPRODAVNICA.Services
         {
             productRepository.Update(obj);
         }
+
+
+        /// <summary>
+        ///  Table search 
+        /// </summary>
+        /// <param name="pageNumber"></param>
+        /// <param name="rowsPerPage"></param>
+        /// <param name="conditions"></param>
+        /// <param name="orderBy"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public List<ProductModel> TableSearch(int pageNumber, int rowsPerPage, string conditions, string orderBy)
+        {
+            List<Product>? resultFromDb = productRepository.TableSearch( pageNumber, rowsPerPage, conditions, orderBy);
+            List<ProductModel> resultModel = mapperService.Map<List<ProductModel>>(resultFromDb);
+            return resultModel;
+        }
+
+      
     }
 }

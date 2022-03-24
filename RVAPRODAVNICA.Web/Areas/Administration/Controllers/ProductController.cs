@@ -36,6 +36,7 @@ namespace RVAPRODAVNICA.Web.Areas.Administration.Controllers
         public IActionResult Products()
         {
             return View(productService.ReadAll());
+            /*return View();*/
         } 
         #endregion
 
