@@ -39,8 +39,10 @@ namespace RVAPRODAVNICA.Web.Areas.Administration.Controllers
             return View();
         }
 
+        
+
         /// <summary>
-        /// Rows for products
+        /// Adding certain collections from db
         /// </summary>
         /// <param name="pageNumber"></param>
         /// <param name="rowsPerPage"></param>
