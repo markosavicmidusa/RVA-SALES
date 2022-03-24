@@ -39,10 +39,17 @@ namespace RVAPRODAVNICA.Web.Areas.Administration.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Rows for products
+        /// </summary>
+        /// <param name="pageNumber"></param>
+        /// <param name="rowsPerPage"></param>
+        /// <returns></returns>
+
         public IActionResult Rows(int pageNumber, int rowsPerPage)
         {
             var products = productService.TableSearch(pageNumber, rowsPerPage);
-            return View(productService.ReadAll());
+            return View(products);
             /*return View();*/
         }
 
