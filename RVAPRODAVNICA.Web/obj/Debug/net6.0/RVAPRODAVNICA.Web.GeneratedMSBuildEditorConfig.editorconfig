@@ -19,6 +19,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUHJvZHVjdFxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/Views/Product/Rows.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUHJvZHVjdFxSb3dzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -18,7 +18,7 @@ namespace RVAPRODAVNICA.Repositories
         int Create(TEntity obj);
         void Update(TEntity obj);
         void Delete(TEntity obj);
-
+        List<TEntity> TableSearch(int pageNumber, int rowsPerPage);
 
     }
 
@@ -47,6 +47,8 @@ namespace RVAPRODAVNICA.Repositories
             List<TEntity> results = connection.GetList<TEntity>().ToList();
             return results;
         }
+
+
         /// <summary>
         /// Get one record 
         /// </summary>
@@ -60,6 +62,9 @@ namespace RVAPRODAVNICA.Repositories
             return result;
 
         }
+
+
+
         /// <summary>
         /// Create
         /// </summary>
@@ -71,6 +76,8 @@ namespace RVAPRODAVNICA.Repositories
             var result = connection.Insert(obj);
             return (int)result;
         }
+        
+        
         /// <summary>
         /// Update
         /// </summary>
@@ -80,6 +87,10 @@ namespace RVAPRODAVNICA.Repositories
         {
             connection.Update(obj);
         }
+
+
+
+
         /// <summary>
         /// Delete
         /// </summary>
@@ -89,5 +100,22 @@ namespace RVAPRODAVNICA.Repositories
         {
             connection.Delete(obj);
         }
+
+
+
+        /// <summary>
+        /// table search for pagination
+        /// </summary>
+        /// <param name="pageNumber"></param>
+        /// <param name="rowsPerPage"></param>
+        /// <param name="conditions"></param>
+        /// <param name="orderBy"></param>
+        /// <returns></returns>
+        public List<TEntity> TableSearch(int pageNumber, int rowsPerPage)
+        {
+            return connection.GetListPaged<TEntity>(pageNumber, rowsPerPage, "", "").ToList();
+        }
+
+
     }
 }

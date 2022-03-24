@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TNyGIpkaqnDqdPJdfTcn5TOEbophEfBITtMzTocs4rs=",
+  "Hash": "dViA+DTy2lpUMDljwOvtzKWynzbzszxmd/dBFiL/1Vk=",
   "Source": "RVAPRODAVNICA.Web",
   "BasePath": "_content/RVAPRODAVNICA.Web",
   "Mode": "Default",
@@ -3551,6 +3551,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\vr-bg.jpg"
+    },
+    {
+      "Identity": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Web\\wwwroot\\js\\ajaxCalls.js",
+      "SourceId": "RVAPRODAVNICA.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Web\\wwwroot\\",
+      "BasePath": "_content/RVAPRODAVNICA.Web",
+      "RelativePath": "js/ajaxCalls.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ajaxCalls.js"
     },
     {
       "Identity": "D:\\RVA-SALES\\RVAPRODAVNICA\\RVAPRODAVNICA.Web\\wwwroot\\js\\core\\bootstrap.bundle.min.js",

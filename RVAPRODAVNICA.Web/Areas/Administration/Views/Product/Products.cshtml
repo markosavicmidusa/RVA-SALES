@@ -17,7 +17,7 @@
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
+                <table class="table align-items-center mb-0" >
                   <thead>
                     <tr>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
@@ -27,17 +27,44 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center">Options </th>
                     </tr>
                   </thead>
-                  <tbody>    
 
+                  <tbody id="product-panel">    
                   </tbody>
                 </table>
               </div>
             </div>
+                <button class="btn btn-secondary mt-2" id="load-more">LOAD</button>
           </div>
         </div>
       </div>
 
+      @section Scripts{
+        <script src="~/js/ajaxCalls.js"></script>
+        <script>
 
-      <script></script>
+            $(document).ready(function() {
+                 /*console.log( "ready!" );*/
+                 //alert("hello");
+                 /** Ajax ima ugradjen http request */
+                 /**Iskoristio je neki kod koji je pripremio */
+
+                 var pageNumber = 1;
+                 var rowsPerPage = 3;
+                 var url = "/Administration/Product/Rows";
+                 var dataObject = $('#product-panel');
+
+               // TableSearch(dataObject, url, pageNumber, rowsPerPage);
+
+                 $("#load-more").click(function (){
+                     dataObject.empty();
+                     TableSearch(dataObject, url, pageNumber, rowsPerPage);
+                     pageNumber++;
+                 })  
+
+            })
+        </script>
+
+      }
+      
 
 
