@@ -36,7 +36,7 @@
                         <span class="text-secondary text-xs font-weight-bold">@item.DataCreatedAt</span>
                       </td>
                       <td class="align-middle  text-center">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs " data-toggle="tooltip" data-original-title="Edit user">
+                        <a asp-action="Update" asp-controller="Product" asp-area="Administration" asp-route-id="@item.Id" class="text-secondary font-weight-bold text-xs " data-toggle="tooltip" data-original-title="Edit user">
                           Edit
                         </a>
                       </td>

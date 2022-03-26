@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using Dapper;
 using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
+using RVAPRODAVNICA.Data;
 
 namespace RVAPRODAVNICA.Repositories
 {
 
-    public interface IBaseRepository<TEntity> 
+    public interface IBaseRepository<TEntity> where TEntity : Base
     {
         List<TEntity> readAll();
         TEntity readOne(int id);
@@ -18,11 +19,11 @@ namespace RVAPRODAVNICA.Repositories
         int Create(TEntity obj);
         void Update(TEntity obj);
         void Delete(TEntity obj);
-        List<TEntity> TableSearch(int pageNumber, int rowsPerPage);
+        List<TEntity> TableSearch(int pageNumber, int rowsPerPage, string v);
 
     }
 
-    public class BaseRepository<TEntity> : IBaseRepository<TEntity>
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : Base
     {
 
         private IConfiguration configuration;
@@ -72,7 +73,10 @@ namespace RVAPRODAVNICA.Repositories
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
         public int Create(TEntity obj)
-        {
+        {   
+            obj.Active = true;
+            obj.DataCreatedAt = DateTime.Now;
+            obj.DataUreatedAt = DateTime.Now;
             var result = connection.Insert(obj);
             return (int)result;
         }
@@ -111,9 +115,11 @@ namespace RVAPRODAVNICA.Repositories
         /// <param name="conditions"></param>
         /// <param name="orderBy"></param>
         /// <returns></returns>
-        public List<TEntity> TableSearch(int pageNumber, int rowsPerPage)
+        public List<TEntity> TableSearch(int pageNumber, int rowsPerPage, string search)
         {
-            return connection.GetListPaged<TEntity>(pageNumber, rowsPerPage, "", "").ToList();
+
+            return connection.GetListPaged<TEntity>(pageNumber, rowsPerPage, $"WHERE Name like '%{search}%' or Description like '%{search}%'","").ToList();
+
         }
 
 

@@ -15,12 +15,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\RVA-SALES\RVAPRODAVNICA\RVAPRODAVNICA.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/Views/Product/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUHJvZHVjdFxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/Views/Product/Rows.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUHJvZHVjdFxSb3dzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/RVA-SALES/RVAPRODAVNICA/RVAPRODAVNICA.Web/Areas/Administration/_ViewImports.cshtml]

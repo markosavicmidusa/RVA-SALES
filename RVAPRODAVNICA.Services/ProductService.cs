@@ -17,11 +17,11 @@ namespace RVAPRODAVNICA.Services
 
         List<ProductModel>ReadAll();
         ProductModel ReadOne(int id);
-        int Create(Product obj);
-        void Update(Product obj);
+        int Create(ProductModel obj);
+        void Update(ProductModel obj);
         void Delete(Product obj);
 
-        List<ProductModel> TableSearch(int pageNumber, int rowsPerPage);
+        List<ProductModel> TableSearch(int pageNumber, int rowsPerPage, string search);
 
 
     }
@@ -43,9 +43,9 @@ namespace RVAPRODAVNICA.Services
         /// <param name="obj"></param>
         /// <returns></returns>
 
-        public int Create(Product obj)
+        public int Create(ProductModel obj)
         {
-            return productRepository.Create(obj);
+            return productRepository.Create(mapperService.Map<Product>(obj));
         }
         /// <summary>
         /// DELETE
@@ -92,9 +92,9 @@ namespace RVAPRODAVNICA.Services
         /// UPDATE
         /// </summary>
         /// <param name="obj"></param>
-        public void Update(Product obj)
+        public void Update(ProductModel obj)
         {
-            productRepository.Update(obj);
+            productRepository.Update(mapperService.Map<Product>(obj));
         }
 
 
@@ -107,14 +107,15 @@ namespace RVAPRODAVNICA.Services
         /// <param name="orderBy"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public List<ProductModel> TableSearch(int pageNumber, int rowsPerPage)
+        public List<ProductModel> TableSearch(int pageNumber, int rowsPerPage, string search)
         {
             //, string conditions, string orderBy - obrisali smo ovo
-
-            List<Product>? resultFromDb = productRepository.TableSearch( pageNumber, rowsPerPage);
+       
+            List<Product>? resultFromDb = productRepository.TableSearch( pageNumber, rowsPerPage, search);
             List<ProductModel> resultModel = mapperService.Map<List<ProductModel>>(resultFromDb);
             return resultModel;
         }
+        
 
       
     }

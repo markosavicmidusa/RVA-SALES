@@ -11,9 +11,10 @@
         <div class="col-12">
           <div class="card my-4">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">Authors table</h6>
+              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3 d-flex justify-content-center">
+                <h6 class="text-white text-capitalize ps-3 w-20 ">Products</h6>
               </div>
+              <a class="btn btn-outline-danger m-2" asp-action="Create" >Create new product</a>
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
@@ -33,33 +34,69 @@
                 </table>
               </div>
             </div>
-                <button class="btn btn-secondary mt-2" id="load-more">LOAD</button>
+
+            <div class="d-flex justify-content-center m-1">
+                <button class="btn btn-secondary m-2 w-20" id="load-old">Load older</button>
+                <button class="btn btn-secondary m-2 w-20" id="load-more">Load more</button>
+            </div>
           </div>
         </div>
       </div>
-
+       
       @section Scripts{
         <script src="~/js/ajaxCalls.js"></script>
         <script>
-
+            var pageNumber = 0;
+            var rowsPerPage = 5;
+            
             $(document).ready(function() {
                  /*console.log( "ready!" );*/
                  //alert("hello");
                  /** Ajax ima ugradjen http request */
                  /**Iskoristio je neki kod koji je pripremio */
 
-                 var pageNumber = 1;
-                 var rowsPerPage = 3;
+                 
                  var url = "/Administration/Product/Rows";
                  var dataObject = $('#product-panel');
+                 var search = $("#search").val();
 
+                // $("#load-old").prop('disabled', true);
                // TableSearch(dataObject, url, pageNumber, rowsPerPage);
 
                  $("#load-more").click(function (){
                      dataObject.empty();
-                     TableSearch(dataObject, url, pageNumber, rowsPerPage);
+                     search = $("#search").val();
                      pageNumber++;
-                 })  
+                     TableSearch(dataObject, url, pageNumber, rowsPerPage, search);  
+                     //$("#load-old").prop('disabled', false);
+                 });
+                 
+                 $("#load-old").click(function (){
+                
+                     if(pageNumber <= 1){
+                         
+                        pageNumber = 1;
+                       // $("#load-old").prop('disabled', true);
+                     }else{
+                        
+                        pageNumber--;
+                     }
+                     search = $("#search").val();
+                     dataObject.empty();
+                     TableSearch(dataObject, url, pageNumber, rowsPerPage, search); 
+                 });  
+
+
+                 $("#search").keyup(function (){
+
+                     search = $("#search").val();
+                     
+                     dataObject.empty();
+                     pageNumber=1;
+                     
+                     TableSearch(dataObject, url, pageNumber, rowsPerPage, search);
+                     
+                 })  ;
 
             })
         </script>
